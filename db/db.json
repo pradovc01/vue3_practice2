@@ -1,0 +1,192 @@
+{
+  "ganancias": [
+    {
+      "id": "1",
+      "monto_minimo": 4,
+      "monto_maximo": 50,
+      "interes": 1.1
+    },
+    {
+      "id": "2",
+      "monto_minimo": 51,
+      "monto_maximo": 300,
+      "interes": 1.5
+    },
+    {
+      "id": "3",
+      "monto_minimo": 301,
+      "monto_maximo": 1200,
+      "interes": 2.5
+    },
+    {
+      "id": "4",
+      "monto_minimo": 1201,
+      "monto_maximo": 5000,
+      "interes": 3
+    },
+    {
+      "id": "5",
+      "monto_minimo": 5001,
+      "monto_maximo": 15000,
+      "interes": 3
+    },
+    {
+      "id": "6",
+      "monto_minimo": 15001,
+      "monto_maximo": 30000,
+      "interes": 4.51
+    },
+    {
+      "id": "7",
+      "monto_minimo": 30001,
+      "monto_maximo": 500000,
+      "interes": 5
+    }
+  ],
+  "clientes": [
+    {
+      "id": "1",
+      "nombre": " Juan Perez",
+      "ci": "3216547890",
+      "direccion": "Calle 123, 456",
+      "telefono": "12-34343",
+      "nota": "test"
+    },
+    {
+      "id": "2",
+      "nombre": "Marcela Caceres Lamas",
+      "ci": "4216547890",
+      "direccion": "Calle 123, 456xxxxx",
+      "telefono": "",
+      "nota": "cliente a cuidado, trajo varias veces joyas de oro falso"
+    },
+    {
+      "id": "3",
+      "nombre": "Maribel Flores",
+      "ci": 3216547891,
+      "direccion": "Calle 123, 4563",
+      "telefono": "987654321",
+      "nota": "Revisar detallamente el dinero que paga, trajo varias veces dolares y bs falso"
+    }
+  ],
+  "prendas": [
+    {
+      "id": "1",
+      "categoria": "JOYA",
+      "descripcion": "2 anillos , 1 piedra rosada (300 grs), otro piedra roja (150 grs)"
+    },
+    {
+      "id": "2",
+      "categoria": "VEHICULO",
+      "descripcion": "1 toyota yairs 5 puertas color plomo metalico, rayones lateral izquierdo puerta trasera. Placa 3567LGH Sta cruz"
+    },
+    {
+      "id": "3",
+      "categoria": "MOTOCICLETA",
+      "descripcion": "1 moto , dorado con negro yamaha, placa: 2389 GJY. tiene detalle en el asiento (abertura de 5 cms)"
+    },
+    {
+      "id": "4",
+      "categoria": "VEHICULO",
+      "descripcion": "Suzuki mode 2010 color blanco, placa 3456THJ con gas"
+    },
+    {
+      "categoria": "VEHICULO",
+      "descripcion": "text1213",
+      "id": "TGzLaOF"
+    }
+  ],
+  "prestamos": [
+    {
+      "id": "1",
+      "clienteId": "1",
+      "prendaId": "1",
+      "codigo_factura": "00001",
+      "fecha_prestamo": "2022-05-13",
+      "numero_cuotas": 12,
+      "fecha_recojo": "2023-05-13",
+      "capital": 450.4,
+      "gananciaId": "3",
+      "activo": false,
+      "en_almacen": false
+    },
+    {
+      "id": "2",
+      "clienteId": "1",
+      "prendaId": "2",
+      "codigo_factura": "00004",
+      "fecha_prestamo": "2024-10-13",
+      "numero_cuotas": 10,
+      "fecha_recojo": "2025-08-13",
+      "capital": 8000,
+      "gananciaId": "5",
+      "activo": true,
+      "en_almacen": true
+    },
+    {
+      "id": "3",
+      "clienteId": "2",
+      "prendaId": "4",
+      "codigo_factura": "00006",
+      "fecha_prestamo": "2024-12-21",
+      "numero_cuotas": 9,
+      "fecha_recojo": "2025-09-21",
+      "capital": 8600,
+      "gananciaId": "5",
+      "activo": true,
+      "en_almacen": true
+    },
+    {
+      "clienteId": "3",
+      "codigo_factura": "200",
+      "fecha_prestamo": "2024-12-12",
+      "fecha_recojo": "2025-09-13",
+      "numero_cuotas": 8,
+      "gananciaId": "4",
+      "capital": 15000,
+      "categoria": "",
+      "activo": true,
+      "en_almacen": true,
+      "prendaId": "TGzLaOF",
+      "id": "zJdWzQ7"
+    }
+  ],
+  "pagos": [
+    {
+      "id": "1",
+      "codigo_factura": "00002",
+      "prestamoId": "1",
+      "fecha": "2022-06-20",
+      "monto": 10.89,
+      "descripcion": "Cuota 1"
+    },
+    {
+      "id": "3",
+      "prestamoId": "2",
+      "fecha": "2024-11-16",
+      "codigo_factura": "00005",
+      "monto": 240,
+      "descripcion": "Cuota 1"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "admin123",
+      "rol": "ADMIN"
+    },
+    {
+      "id": "2",
+      "username": "Laura",
+      "password": "Flores",
+      "rol": "MANAGER"
+    },
+    {
+      "id": "2",
+      "username": "Laura",
+      "password": "Flores",
+      "rol": "CAJERO"
+    }
+  ]
+}

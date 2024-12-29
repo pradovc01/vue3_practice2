@@ -1,11 +1,36 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import ClienteView from '../views/cliente/ClienteView.vue'
+import PrestamoView from '../views/prestamo/PrestamoView.vue'
+import InteresView from '../views/interes/InteresView.vue'
+import PagosView from '../views/pagos/PagosView.vue'
 
 const routes = [
   {
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/cliente',
+    name: 'cliente',
+    component: ClienteView
+  },
+  {
+    path: '/prestamo',
+    name: 'prestamo',
+    component: PrestamoView
+  },
+  {
+    path: '/interes',
+    name: 'interes',
+    component: InteresView
+  },
+  ,
+  {
+    path: '/pago_prestamo/:id',
+    name: 'pago_prestamo',
+    component: PagosView
   },
   {
     path: '/about',
@@ -18,7 +43,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHistory(process.env.VUE_APP_API_URL),
   routes
 })
 

@@ -2,13 +2,21 @@ import { createStore } from 'vuex'
 
 export default createStore({
   state: {
-  },
-  getters: {
+    baseUrl: process.env.VUE_APP_API_URL
   },
   mutations: {
+
+
   },
   actions: {
+    increment({ commit }) {
+      commit('increment')
+    }
+
   },
-  modules: {
-  }
+  getters: {
+    getBaseUrl(state) {
+      return state.baseUrl
+    }
+  },
 })
